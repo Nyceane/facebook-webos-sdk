@@ -32,10 +32,9 @@ Create a facebook app at http://www.facebook.com/developers/createapp.php
 Setting up the website to your domain, in my case would be www.paschar.com, but you need to set it to anything that suites you
 Step 3
 Create your callback url on your website, which can be any url, in my case it's www(.)paschar(.)com/webos/callback.  Set it automatically redirect to following authorizing url upon receiving "code" in the QueryString
-https://graph(.)facebook(.)com/oauth/access_token?client_id=[your clientid]&redirect_uri=[your redirect url, i use the same one]&client_secret=[your client secret]&code=[the code you receive form querystring]
+https: // graph. facebook. com/oauth/access_token?client_id=[your clientid]&redirect_uri=[your redirect url, i use the same one]&client_secret=[your client secret]&code=[the code you receive form querystring]
 Step 4
-Now that everything you need outside of WebOS is done, you can download my "facebook webos sdk" from https://github.com/Nyceane/facebook-webos-sdk make sure you change the link to your own callback url in fbconnectassistant.js.
-
+Now that everything you need outside of WebOS is done, you can download this "facebook webos sdk"
 
 For the entire guide, please visit blog post at http://blog.paschar.com/post/2011/02/08/Facebook-Connect-SDK-for-WebOS.aspx
 
