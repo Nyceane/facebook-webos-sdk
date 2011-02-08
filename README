@@ -1,0 +1,40 @@
+/*
+ * The MIT License
+
+ * Copyright (c) 2010 Peter Ma
+
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+*/
+
+This is a a guide how to connect to Facebook on WebOS platform.
+
+I have been trying to get Facebook Connect working on WebOS and having no luck of googling the answer, so I've decided to build it myself.
+Below are the steps you need to get it working
+Step 1
+Create a facebook app at http://www.facebook.com/developers/createapp.php
+ Step 2
+Setting up the website to your domain, in my case would be www.paschar.com, but you need to set it to anything that suites you
+Step 3
+Create your callback url on your website, which can be any url, in my case it's www.paschar.com/webos/callback.  Set it automatically redirect to following authorizing url upon receiving "code" in the QueryString
+https://graph.facebook.com/oauth/access_token?client_id=[your clientid]&redirect_uri=[your redirect url, i use the same one]&client_secret=[your client secret]&code=[the code you receive form querystring]
+Step 4
+Now that everything you need outside of WebOS is done, you can download my "facebook webos sdk" from https://github.com/Nyceane/facebook-webos-sdk make sure you change the link to your own callback url in fbconnectassistant.js.
+
+
+For the entire guide, please visit blog post at http://blog.paschar.com/post/2011/02/08/Facebook-Connect-SDK-for-WebOS.aspx

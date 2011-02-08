@@ -1,0 +1,9 @@
+{
+	"id": "com.pascharllc.facebookwebossdk",
+	"version": "1.0.0",
+	"vendor": "paschar LLC",
+	"type": "web",
+	"main": "index.html",
+	"title": "Facebook WebOS SDK",
+	"icon": "icon.png"
+}
